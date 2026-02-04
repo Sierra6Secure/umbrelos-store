@@ -1,9 +1,9 @@
+version: "3.7"
+
 services:
   unbound:
-    build: unbound
+    image: mvance/unbound:latest
     restart: unless-stopped
     ports:
-      - "5335:5335/udp"
-      - "5335:5335/tcp"
-    volumes:
-      - ${APP_DATA_DIR}/unbound:/etc/unbound
+      - "5335:53/udp"
+      - "5335:53/tcp"
