@@ -8,4 +8,4 @@ services:
       - "5335:53/udp"
       - "5335:53/tcp"
     volumes:
-      - ${APP_DATA_DIR}/unbound:/etc/unbound
+      - ${APP_DATA_DIR}/unbound:/opt/unbound/etc/unbound
