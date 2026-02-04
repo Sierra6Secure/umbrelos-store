@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: sierra6-unbound-dns_server_1
-      APP_PORT: 5334
+      APP_PORT: 5336
 
   server:
     image: getumbrel/community-app-store-hello-world:latest
