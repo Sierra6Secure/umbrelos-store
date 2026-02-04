@@ -1,0 +1,14 @@
+FROM alpine:3.19
+
+RUN apk add --no-cache unbound ca-certificates curl
+
+RUN mkdir -p /etc/unbound && \
+    curl -o /etc/unbound/root.hints https://www.internic.net/domain/named.cache
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 5335/udp
+EXPOSE 5335/tcp
+
+ENTRYPOINT ["/entrypoint.sh"]
