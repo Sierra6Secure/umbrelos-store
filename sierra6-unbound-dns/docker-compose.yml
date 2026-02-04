@@ -4,14 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: sierra6-unbound-dns_web_1
-      APP_PORT: 80
-
-  web:
-    image: nginx:alpine
-    restart: on-failure
-    volumes:
-      - ./ui:/usr/share/nginx/html:ro
-      - ./ui/default.conf:/etc/nginx/conf.d/default.conf:ro
+      APP_PORT: 5334
 
   unbound:
     image: mvance/unbound:latest
