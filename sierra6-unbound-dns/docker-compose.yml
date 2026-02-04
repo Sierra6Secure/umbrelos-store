@@ -10,7 +10,7 @@ services:
     image: nginx:alpine
     restart: on-failure
     volumes:
-      - ./ui/index.html:/usr/share/nginx/html/index.html:ro
+      - ./ui:/usr/share/nginx/html:ro
 
   unbound:
     image: mvance/unbound:latest
