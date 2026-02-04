@@ -2,7 +2,7 @@ manifestVersion: 1
 id: sierra6-unbound-dns
 name: Unbound DNS
 tagline: Local recursive DNS resolver
-icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/sierra6_unbound_dns.svg
+icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/sierra6_unbound_dns.svg
 category: Networking
 version: "0.1.5"
 port: 5010
