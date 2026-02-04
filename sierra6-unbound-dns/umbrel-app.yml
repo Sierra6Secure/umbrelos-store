@@ -27,6 +27,6 @@ releaseNotes: >-
   Initial build in progress....
   Standby...
 dependencies: []
-path: "sierra6-unbound-dns"
+path: ""
 defaultUsername: ""
 defaultPassword: ""
