@@ -1,9 +1,0 @@
-services:
-  unbound:
-    build: unbound
-    restart: unless-stopped
-    ports:
-      - "5335:5335/udp"
-      - "5335:5335/tcp"
-    volumes:
-      - ${APP_DATA_DIR}/unbound:/etc/unbound
