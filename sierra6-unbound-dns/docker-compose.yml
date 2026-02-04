@@ -9,7 +9,7 @@ services:
       - "5335:53/tcp"
 
   ui:
-    build: ui
+    build: ./ui
     restart: unless-stopped
     ports:
       - "8080:8080"
