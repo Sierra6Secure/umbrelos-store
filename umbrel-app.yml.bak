@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: sierra6-unbound-dns
+name: Unbound DNS
+tagline: Local recursive DNS resolver
+icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/sierra6_unbound_dns.svg
+category: Networking
+version: "0.1.0"
+port: 8080
+description: >-
+  A validating, recursive, caching DNS resolver designed for privacy and speed. By running Unbound on your Umbrel, you no longer need to trust 3rd party DNS providers like Google or Cloudflare. 
+  
+
+
+  Packaged by Sierra6.
+
+developer: Sierra6
+website: https://github.com/Sierra6Secure/umbrelos-store
+submitter: Sierra6
+submission: 
+repo: 
+support: https://github.com/Sierra6Secure/umbrelos-store
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
