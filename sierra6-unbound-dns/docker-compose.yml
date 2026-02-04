@@ -9,6 +9,8 @@ services:
   web:
     image: nginx:alpine
     restart: on-failure
+    volumes:
+      - ./ui/index.html:/usr/share/nginx/html/index.html:ro
 
   unbound:
     image: mvance/unbound:latest
