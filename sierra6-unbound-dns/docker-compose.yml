@@ -7,16 +7,9 @@ services:
       APP_PORT: 5334
 
   server:
-    image: ghcr.io/willitmod/axebench-release:v3.0.2-r1@sha256:bbd179793fed078717223f8a9906445fe08cceaa98c34248fc61ef5983cf6c61
-    restart: on-failure
-    stop_grace_period: 30s
+    image: getumbrel/community-app-store-hello-world:latest
+    user: "1000:1000"
     init: true
-    environment:
-      AXE_HOST: 0.0.0.0
-      AXE_PORT: 5334
-      HOME: /ui
-    volumes:
-      - ${APP_DATA_DIR}/ui:/ui
 
   unbound:
     image: mvance/unbound:latest
