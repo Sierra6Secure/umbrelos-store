@@ -1,6 +1,6 @@
 services:
   unbound:
-    build: ./unbound
+    build: unbound
     restart: unless-stopped
     ports:
       - "5335:5335/udp"
