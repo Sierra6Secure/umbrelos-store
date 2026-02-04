@@ -1,16 +1,6 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: sierra6-unbound-dns_server_1
-      APP_PORT: 5020
-
-  server:
-    image: ghcr.io/sierra6secure/unbound-ui:test
-    user: "1000:1000"
-    init: true
-
   unbound:
     image: mvance/unbound:latest
     restart: unless-stopped
