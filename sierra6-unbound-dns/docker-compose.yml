@@ -7,5 +7,9 @@ services:
     ports:
       - "5335:53/udp"
       - "5335:53/tcp"
-    volumes:
-      - ${APP_DATA_DIR}/unbound:/etc/unbound
+
+  ui:
+    build: ui
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
