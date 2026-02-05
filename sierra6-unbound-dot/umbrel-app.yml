@@ -5,7 +5,7 @@ tagline: Private DNS Forwarder with TLS Encryption
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/sierra6_unbound_dns.svg
 category: Networking
 version: "0.9.9"
-port: 5335
+port: 5330
 description: >-
   A validating, caching DNS forwarder configured exclusively for DNS over TLS (DoT).
 
@@ -78,6 +78,6 @@ releaseNotes: >-
 
 
 dependencies: []
-path: "sierra6-unbound-dns"
+path: "sierra6-unbound-dot"
 defaultUsername: ""
 defaultPassword: ""
