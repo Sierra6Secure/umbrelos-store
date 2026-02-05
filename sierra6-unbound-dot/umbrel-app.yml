@@ -78,6 +78,6 @@ releaseNotes: >-
 
 
 dependencies: []
-path: ""
+path: "sierra6-unbound-dns"
 defaultUsername: ""
 defaultPassword: ""
