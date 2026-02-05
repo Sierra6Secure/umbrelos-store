@@ -9,11 +9,3 @@ services:
       - "5335:53/tcp"
     volumes:
       - ${APP_DATA_DIR}/unbound:/opt/unbound/etc/unbound
-
-ui:
-    image: ghcr.io/sierra6secure/unbound-dot-ui:latest
-    restart: unless-stopped
-    volumes:
-      - ${APP_DATA_DIR}/unbound:/opt/unbound/etc/unbound
-    environment:
-      - APP_PORT=5330
