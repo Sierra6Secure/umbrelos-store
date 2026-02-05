@@ -24,6 +24,8 @@ description: >-
 
     - Integration: Perfectly optimized to serve as the upstream resolver for Pi-hole, creating a complete ad-blocking and privacy-hardened pipeline.
 
+    -
+
 
 
 
@@ -42,7 +44,7 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/DNSSEC.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/DoT.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/PiHole.png
-  
+
 releaseNotes: >-
   v0.9.9: Initial Security Hardening
 
