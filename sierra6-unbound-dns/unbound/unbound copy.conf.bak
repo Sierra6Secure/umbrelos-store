@@ -1,0 +1,38 @@
+server:
+  interface: 0.0.0.0
+  port: 53
+
+  do-ip4: yes
+  do-ip6: no
+  do-udp: yes
+  do-tcp: yes
+
+  verbosity: 1
+  use-syslog: no
+  logfile: ""
+
+  # Allow recursion from localhost and typical home LAN ranges
+  access-control: 127.0.0.0/8 allow
+  access-control: 10.0.0.0/8 allow
+  access-control: 172.16.0.0/12 allow
+  access-control: 192.168.0.0/16 allow
+  access-control: 0.0.0.0/0 refuse   # optional safety catchall
+
+  hide-identity: yes
+  hide-version: yes
+  qname-minimisation: yes
+  prefetch: yes
+
+  # optional hardening
+  harden-glue: yes
+  harden-dnssec-stripped: yes
+
+  tls-cert-bundle: /etc/ssl/certs/ca-certificates.crt
+  tls-upstream: yes
+
+forward-zone:
+  name: "."
+  forward-first: no
+  forward-tls-upstream: yes
+  forward-addr: 1.1.1.1@853#cloudflare-dns.com
+  forward-addr: 1.0.0.1@853#cloudflare-dns.com
