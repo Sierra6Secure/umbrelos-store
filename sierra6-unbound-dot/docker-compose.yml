@@ -17,5 +17,6 @@ services:
       - "5330:5330"
     volumes:
       - ${APP_DATA_DIR}/unbound:/opt/unbound/etc/unbound
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - APP_PORT=5330
