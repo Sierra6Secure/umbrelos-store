@@ -1,6 +1,6 @@
 manifestVersion: 1
-id: sierra6-unbound-dns
-name: Unbound DNS (DoT)
+id: sierra6-unbound-dot
+name: Unbound DoT
 tagline: Private DNS Forwarder with TLS Encryption
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/sierra6_unbound_dns.svg
 category: Networking
@@ -13,15 +13,21 @@ description: >-
 
   Key Technical Features:
 
-    Protocol: Operates as a "Caching Forwarder" using DNS over TLS (DoT) for maximum privacy.
+    - Protocol: Operates as a "Caching Forwarder" using DNS over TLS (DoT) for maximum privacy.
 
-    Security: Enforces encrypted communication via Port 853 to trusted upstream providers (Cloudflare/Quad9).
+    - Security: Enforces encrypted communication via Port 853 to trusted upstream providers (Cloudflare/Quad9).
 
-    Privacy: Employs forward-tls-upstream: yes and forward-first: no to ensure that if an encrypted connection cannot be established, the system will never fall back to an unsecure, cleartext query.
+    - Privacy: Employs forward-tls-upstream: yes and forward-first: no to ensure that if an encrypted connection cannot be established, the system will never fall back to an unsecure, cleartext query.
 
-    Validation: Supports DNSSEC to ensure the integrity of the records received, protecting you from "spoofing" attacks.
+    - Validation: Supports DNSSEC to ensure the integrity of the records received, protecting you from "spoofing" attacks.
 
-    Integration: Perfectly optimized to serve as the upstream resolver for Pi-hole, creating a complete ad-blocking and privacy-hardened pipeline.
+    - Integration: Perfectly optimized to serve as the upstream resolver for Pi-hole, creating a complete ad-blocking and privacy-hardened pipeline.
+
+
+
+
+
+    
 
   Packaged by Sierra6.
 
@@ -40,13 +46,18 @@ releaseNotes: >-
 
   - Core Logic: Configured as a high-performance caching forwarder with mandatory DNS over TLS (DoT).
 
+
   - Security Policy: Implemented forward-tls-upstream: yes and forward-first: no. This strictly prevents any "cleartext leaks" by ensuring the resolver will fail rather than send unencrypted data if the TLS handshake fails.
+
 
   - Upstream: Optimized for Cloudflare’s encrypted anycast network via Port 853.
 
+
   - Pi-hole Ready: Set to listen on internal Port 53 for seamless integration with local ad-blocking containers.
 
+
   - DNSSEC: Enabled hardware-accelerated signature validation to prevent DNS hijacking and spoofing.
+
 
 
   
@@ -55,9 +66,13 @@ releaseNotes: >-
 
   - Dashboard UI: Upcoming feature to allow graphical management of upstream providers and TLS certificates.
 
+
   - Dynamic Tuning: Currently, manual overrides are available via editing unbound.conf within the app data directory.
 
+
   - Log Management: Future updates will include automated log rotation to manage disk space for users requiring high-verbosity debugging.
+
+
 dependencies: []
 path: "sierra6-unbound-dns"
 defaultUsername: ""
