@@ -13,8 +13,6 @@ services:
 ui:
     image: ghcr.io/sierra6secure/unbound-dot-ui:latest
     restart: unless-stopped
-    ports:
-      - "5330:5330" 
     volumes:
       - ${APP_DATA_DIR}/unbound:/opt/unbound/etc/unbound
     environment:
