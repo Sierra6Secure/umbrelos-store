@@ -2,7 +2,7 @@ manifestVersion: 1
 id: sierra6-unbound-dot
 name: Unbound DoT
 tagline: Private DNS Forwarder with TLS Encryption
-icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/sierra6_unbound_dns.svg
+icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/sierra6_unbound_dns.svg
 category: Networking
 version: "0.9.9"
 port: 5335
@@ -39,10 +39,10 @@ submission:
 repo: 
 support: https://github.com/Sierra6Secure/umbrelos-store
 gallery:
-  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/DNSSEC.png
-  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/DoT.png
-  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/PiHole.png
-
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/DNSSEC.png
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/DoT.png
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/PiHole.png
+  
 releaseNotes: >-
   v0.9.9: Initial Security Hardening
 
