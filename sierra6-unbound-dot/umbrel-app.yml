@@ -9,10 +9,11 @@ port: 5335
 description: >-
   A validating, caching DNS forwarder configured exclusively for DNS over TLS (DoT).
 
+
   By running Unbound on your Umbrel with this specific configuration, your DNS queries are wrapped in a secure TLS tunnel before leaving your network. This prevents your ISP or local attackers from snooping on your browsing habits or hijacking your DNS requests.
 
+  
   Key Technical Features:
-
     - Protocol: Operates as a "Caching Forwarder" using DNS over TLS (DoT) for maximum privacy.
 
     - Security: Enforces encrypted communication via Port 853 to trusted upstream providers (Cloudflare/Quad9).
@@ -38,9 +39,10 @@ submission:
 repo: 
 support: https://github.com/Sierra6Secure/umbrelos-store
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/DNSSEC.png
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/DoT.png
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dns/img/PiHole.png
+
 releaseNotes: >-
   v0.9.9: Initial Security Hardening
 
