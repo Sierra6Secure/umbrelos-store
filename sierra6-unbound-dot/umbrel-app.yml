@@ -13,7 +13,7 @@ description: >-
   By running Unbound on your Umbrel with this specific configuration, your DNS queries are wrapped in a secure TLS tunnel before leaving your network. This prevents your ISP or local attackers from snooping on your browsing habits or hijacking your DNS requests.
 
   
-  Key Technical Features:
+  Key Features:
     - Protocol: Operates as a "Caching Forwarder" using DNS over TLS (DoT) for maximum privacy.
 
     - Security: Enforces encrypted communication via Port 853 to trusted upstream providers (Cloudflare/Quad9).
@@ -24,13 +24,8 @@ description: >-
 
     - Integration: Perfectly optimized to serve as the upstream resolver for Pi-hole, creating a complete ad-blocking and privacy-hardened pipeline.
 
-    -
-
-
-
-
-
     
+
 
   Packaged by Sierra6.
 
@@ -46,36 +41,36 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-unbound-dot/img/PiHole.png
 
 releaseNotes: >-
-  v0.9.9: Initial Security Hardening
 
-  - Core Logic: Configured as a high-performance caching forwarder with mandatory DNS over TLS (DoT).
+  1.0: UI Release
 
-
-  - Security Policy: Implemented forward-tls-upstream: yes and forward-first: no. This strictly prevents any "cleartext leaks" by ensuring the resolver will fail rather than send unencrypted data if the TLS handshake fails.
-
-
-  - Upstream: Optimized for Cloudflare’s encrypted anycast network via Port 853.
-
-
-  - Pi-hole Ready: Set to listen on internal Port 53 for seamless integration with local ad-blocking containers.
-
-
-  - DNSSEC: Enabled hardware-accelerated signature validation to prevent DNS hijacking and spoofing.
-
-
-
+    🖥️ NEW MANAGEMENT UI
   
-
-  Roadmap: Continuous Improvement
-
-  - Dashboard UI: Upcoming feature to allow graphical management of upstream providers and TLS certificates.
-
-
-  - Dynamic Tuning: Currently, manual overrides are available via editing unbound.conf within the app data directory.
+    - Dynamic Configuration: Manage upstream DNS and custom settings via the Sierra6 dashboard.
+  
+    - Container Control: Integrated logic for automated restarts and configuration hot-swaps.
+  
+    - Safety System: Added a 'Revert to Default' feature to prevent accidental lockouts.
 
 
-  - Log Management: Future updates will include automated log rotation to manage disk space for users requiring high-verbosity debugging.
 
+    🛡️ SECURITY HARDENING
+  
+    - DoT Enforcement: Mandatory Port 853 encryption with 'forward-tls-upstream: yes'.
+  
+    - Leak Prevention: Set 'forward-first: no' to strictly block unencrypted fallback.
+  
+    - DNSSEC: Enabled hardware-accelerated signature validation to prevent spoofing.
+
+
+
+    🗺️ Roadmap
+    
+    - Performance Metrics: Real-time graphs for cache hit rates and latency.
+
+    - Certificate Management: Enhanced UI for private enterprise-grade TLS certs.
+
+     -Automated Backups: One-click export for disaster recovery.
 
 dependencies: []
 path: ""
