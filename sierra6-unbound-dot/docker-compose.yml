@@ -5,6 +5,7 @@ services:
     container_name: sierra6-unbound-dot_unbound_1
     image: mvance/unbound:latest
     restart: unless-stopped
+    stop_signal: SIGKILL
     networks:
       umbrel_main_network:
         ipv4_address: 10.21.0.2
@@ -15,6 +16,7 @@ services:
       - ${APP_DATA_DIR}/unbound:/opt/unbound/etc/unbound
 
   ui:
+    container_name: sierra6-unbound-dot_ui_1
     image: ghcr.io/sierra6secure/unbound-dot-ui:latest
     restart: unless-stopped
     networks:
