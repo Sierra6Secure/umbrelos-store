@@ -1,0 +1,65 @@
+manifestVersion: 1
+id: sierra6-nerd-watcher
+name: Nerd Watcher
+tagline: App to watch Nerd mining devices
+icon: 
+category: 
+version: "0.0.1"
+port: 
+description: >-
+
+
+developer: Sierra6
+website: https://github.com/Sierra6Secure/umbrelos-store
+submitter: Sierra6
+submission: 
+repo: 
+support: https://github.com/Sierra6Secure/umbrelos-store
+gallery:
+
+
+releaseNotes: >-
+
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+
+
+
+manifestVersion: 1
+id: sierra6-nerd-watcher
+name: Nerd Watcher
+tagline: Real-time monitoring for your NerdMiners
+icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/icon.svg
+category: utility
+version: "0.0.1"
+port: 5005
+description: >-
+  Nerd Watcher is a modern, high-tech dashboard designed specifically for 
+  monitoring Bitcoin NerdMiners and other small-scale ASIC devices on your 
+  local network. 
+
+  Add miners by IP address to track real-time hash rates, chip temperatures, 
+  voltages, and clock frequencies. The app features a visual job-feed 
+  display, allowing you to see the actual work your hardware is performing 
+  on the blockchain in real-time.
+developer: Sierra6
+website: https://github.com/Sierra6Secure/umbrelos-store
+submitter: Sierra6
+submission: 2026-03-04
+repo: https://github.com/Sierra6Secure/umbrelos-store
+support: https://github.com/Sierra6Secure/umbrelos-store/issues
+gallery:
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/gallery/1.jpg
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/gallery/2.jpg
+releaseNotes: >-
+  Initial release of Nerd Watcher. 
+  - Add miners via local IP.
+  - Real-time hardware telemetry (Hashrate, Temp, V, Freq).
+  - Live Stratum job visualization.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
