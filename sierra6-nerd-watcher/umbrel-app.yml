@@ -1,36 +1,6 @@
 manifestVersion: 1
 id: sierra6-nerd-watcher
 name: Nerd Watcher
-tagline: App to watch Nerd mining devices
-icon: 
-category: 
-version: "0.0.1"
-port: 
-description: >-
-
-
-developer: Sierra6
-website: https://github.com/Sierra6Secure/umbrelos-store
-submitter: Sierra6
-submission: 
-repo: 
-support: https://github.com/Sierra6Secure/umbrelos-store
-gallery:
-
-
-releaseNotes: >-
-
-
-dependencies: []
-path: ""
-defaultUsername: ""
-defaultPassword: ""
-
-
-
-manifestVersion: 1
-id: sierra6-nerd-watcher
-name: Nerd Watcher
 tagline: Real-time monitoring for your NerdMiners
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/icon.svg
 category: utility
