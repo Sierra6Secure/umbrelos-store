@@ -13,8 +13,6 @@ services:
       - ${APP_DATA_DIR}/data:/app/data
     environment:
       - PORT=5005
-    depends_on:
-      - bitcoin
 
 networks:
   umbrel_main_network:
