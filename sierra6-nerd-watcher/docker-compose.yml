@@ -4,13 +4,10 @@ services:
   web:
     image: ghcr.io/sierra6secure/nerdwatcher-ui:latest
     restart: on-failure
-    stop_grace_period: 1m
+    stop_grace_period: 2s # Optimized for faster stops
     networks:
-      umbrel_main_network:
-        # Pick a unique IP in the 10.21.0.x range
-        ipv4_address: 10.21.0.250 
+      - umbrel_main_network # Removed the sub-lines that were forcing the static IP
     ports:
-      # Map 5005 on the host to 5005 in the container
       - "5005:5005" 
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
