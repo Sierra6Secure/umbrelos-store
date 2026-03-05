@@ -2,10 +2,12 @@ version: "3.7"
 
 services:
   app_proxy:
-    image: getumbrel/app-proxy:v0.1.0
+    image: getumbrel/app-proxy:v0.1.1
     environment:
       APP_HOST: sierra6-nerd-watcher_web_1
       APP_PORT: 5005
+      # This flag disables the token check that is currently failing
+      PROXY_AUTH_ADD: "false" 
     restart: on-failure
 
   web:
