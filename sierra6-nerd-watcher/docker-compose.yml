@@ -1,20 +1,22 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    image: getumbrel/app-proxy:v0.1.1
-    environment:
-      APP_HOST: sierra6-nerd-watcher_web_1
-      APP_PORT: 5005
-      # This flag disables the token check that is currently failing
-      PROXY_AUTH_ADD: "false" 
-    restart: on-failure
-
   web:
     image: ghcr.io/sierra6secure/nerdwatcher-ui:latest
     restart: on-failure
     stop_grace_period: 1m
+    networks:
+      umbrel_main_network:
+        # Pick a unique IP in the 10.21.0.x range
+        ipv4_address: 10.21.0.250 
+    ports:
+      # Map 5005 on the host to 5005 in the container
+      - "5005:5005" 
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
     environment:
       - PORT=5005
+
+networks:
+  umbrel_main_network:
+    external: true
