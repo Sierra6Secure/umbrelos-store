@@ -1,21 +1,47 @@
 manifestVersion: 1
-
 id: sierra6-nerd-watcher
 name: Nerd Watcher
-tagline: Real-time monitoring for your NerdMiners
+tagline: Mission control for your Bitcoin mining swarm
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
-version: "0.0.1"
+version: "1.0.0"
 port: 5005
 description: >-
-  Nerd Watcher is a modern, high-tech dashboard designed specifically for 
-  monitoring Bitcoin NerdMiners and other small-scale ASIC devices on your 
-  local network. 
+  Nerd Watcher is a real-time swarm dashboard for solo Bitcoin miners running
+  NerdMiner, BitAxe, or any device on AxeOS firmware. Built for the scrappy,
+  determined miner who knows the odds — and mines anyway.
 
-  Add miners by IP address to track real-time hash rates, chip temperatures, 
-  voltages, and clock frequencies. The app features a visual job-feed 
-  display, allowing you to see the actual work your hardware is performing 
-  on the blockchain in real-time.
+
+  Point it at your local network, add miners by IP, and get a live window into
+  your entire operation. Every device reports: hashrate, chip temperature,
+  core voltage, clock frequency, and active pool connection.
+
+
+  KEY FEATURES
+
+  ◆ Swarm Overview — monitor unlimited miners from a single dashboard, sorted
+  by IP, name, hashrate, or online status.
+
+  ◆ Live Block Activity Canvas — a real-time visual grid that fills as your
+  devices find shares, giving you an at-a-glance pulse of your whole swarm.
+
+  ◆ Hardware Telemetry — track hashrate, ASIC temp, VR temp, core voltage, and
+  clock frequency per device, with color-coded alerts for anything running hot.
+
+  ◆ Network Stats — live Bitcoin price, current network difficulty, and block
+  reward displayed in the nav bar at all times.
+
+  ◆ Pool Status — per-miner pool connection indicator so you know exactly
+  who's working and who's drifted offline.
+
+  ◆ Zero Dependencies — self-hosted, LAN-only, no external accounts or API
+  keys required.
+
+  ◆ Requires Bitcoin Node (Umbrel)
+
+
+  Solo mining is a lottery. Nerd Watcher makes sure you never miss your ticket.
+
 developer: Sierra6
 website: https://github.com/Sierra6Secure/umbrelos-store
 submitter: Sierra6
@@ -27,10 +53,14 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
-  Initial release of Nerd Watcher. 
-  - Add miners via local IP.
-  - Real-time hardware telemetry (Hashrate, Temp, V, Freq).
-  - Live Stratum job visualization.
+  Initial release of Nerd Watcher.
+
+  - Add and remove miners by local IP address.
+  - Real-time hardware telemetry: hashrate, ASIC temp, VR temp, voltage, and frequency.
+  - Live block activity canvas — visual share feed updated every 3 seconds.
+  - Network stats bar: Bitcoin price, network difficulty, and block reward.
+  - Pool connection status per miner with color-coded online/offline indicators.
+  - Fully self-hosted — no cloud, no external dependencies.
 dependencies: []
 path: ""
 defaultUsername: ""
