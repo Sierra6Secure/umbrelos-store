@@ -23,8 +23,8 @@ submission: 2026-03-04
 repo: https://github.com/Sierra6Secure/umbrelos-store
 support: https://github.com/Sierra6Secure/umbrelos-store/issues
 gallery:
-  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/gallery/1.jpg
-  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/gallery/2.jpg
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
   Initial release of Nerd Watcher. 
   - Add miners via local IP.
