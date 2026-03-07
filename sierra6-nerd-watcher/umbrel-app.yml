@@ -3,7 +3,7 @@ manifestVersion: 1
 id: sierra6-nerd-watcher
 name: Nerd Watcher
 tagline: Real-time monitoring for your NerdMiners
-icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/icon.svg
+icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
 version: "0.0.1"
 port: 5005
