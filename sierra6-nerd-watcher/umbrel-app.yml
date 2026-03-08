@@ -4,7 +4,7 @@ name: Nerd Watcher
 tagline: Mission control for your Bitcoin mining swarm
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
-version: "1.0.0"
+version: "1.0.1"
 port: 5005
 description: >-
   Nerd Watcher is a real-time swarm dashboard for solo Bitcoin miners running
