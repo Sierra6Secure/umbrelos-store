@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: sierra6-nerd-watcher
 name: Nerd Watcher
-tagline: Mission control for your Bitcoin mining swarm
+tagline: Real-time dashboard for your Bitcoin mining swarm.
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
-version: "1.1.0"
+version: "1.2.0"
 port: 5005
 description: >-
   Nerd Watcher is a real-time swarm dashboard for solo Bitcoin miners running
@@ -24,11 +24,12 @@ description: >-
 
 
   ◆ Live Block Activity Canvas — a real-time visual grid that fills as your
-  devices find shares, giving you an at-a-glance pulse of your whole swarm.
+  miners find shares. Each miner gets its own color-coded canvas, animating
+  in real time as shares land. Watch your swarm work the block.
 
 
   ◆ Hardware Telemetry — track hashrate, ASIC temp, VR temp, core voltage, and
-  clock frequency per device, with color-coded alerts for anything running hot.
+  clock frequency per device.
 
 
   ◆ Network Stats — live Bitcoin price, current network difficulty, and block
@@ -56,6 +57,24 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
+  v1.2.0
+
+  - Mobile nav stats now update live — BTC price, network difficulty, and block
+    reward refresh on every poll on both desktop and mobile.
+
+  - Block Activity canvas is now collapsible on mobile with correct
+    resize behavior when switching between mobile and desktop widths.
+
+  - Block Shares counter color restored to emerald. Syncing state now
+    displays in amber while waiting for a clean block boundary.
+
+  - Syncing dots animation fixed — only the dots animate, the label text
+    no longer shifts.
+
+  - Cross-device baseline sync — share baselines are now server-authoritative.
+    Desktop and mobile always show the same block share count with no drift.
+
+
   v1.1.0
 
   - Bitcoin Node declared as a formal dependency — RPC credentials are now
