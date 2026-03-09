@@ -4,7 +4,7 @@ name: Nerd Watcher
 tagline: Mission control for your Bitcoin mining swarm
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
-version: "1.0.6"
+version: "1.1.0"
 port: 5005
 description: >-
   Nerd Watcher is a real-time swarm dashboard for solo Bitcoin miners running
@@ -39,11 +39,8 @@ description: >-
   who's working and who's drifted offline.
 
 
-  ◆ Zero Dependencies — self-hosted, LAN-only, no external accounts or API
-  keys required.
-
-
-  ◆ Requires Bitcoin Node (Umbrel)
+  ◆ Zero Config on Umbrel — connects to your Bitcoin Node automatically.
+  Manual RPC configuration available for non-Umbrel installs.
 
 
   Solo mining is a lottery. Nerd Watcher makes sure you never miss your ticket.
@@ -59,20 +56,20 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
-  Initial release of Nerd Watcher.
+  v1.1.0
 
-  - Add and remove miners by local IP address.
+  - Bitcoin Node declared as a formal dependency — RPC credentials are now
+    injected automatically by Umbrel. Zero manual configuration required on
+    a standard Umbrel install.
 
-  - Real-time hardware telemetry: hashrate, ASIC temp, VR temp, voltage, and frequency.
+  - Added Node Settings modal (gear icon in nav) for manual RPC configuration
+    on non-Umbrel or custom installs. Settings persist across restarts.
 
-  - Live block activity canvas — visual share feed updated every 3 seconds.
+  - Mobile responsive fixes — miner cards now render correctly on phones.
+    Collapsible Block Activity canvas on mobile. Floating Add Worker button.
 
-  - Network stats bar: Bitcoin price, network difficulty, and block reward.
-
-  - Pool connection status per miner with color-coded online/offline indicators.
-  
-  - Fully self-hosted — no cloud, no external dependencies.
-dependencies: []
+dependencies:
+  - bitcoin
 path: ""
 defaultUsername: ""
 defaultPassword: ""
