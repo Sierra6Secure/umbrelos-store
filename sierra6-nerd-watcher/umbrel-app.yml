@@ -4,7 +4,7 @@ name: Nerd Watcher
 tagline: Real-time dashboard for your Bitcoin mining swarm.
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
-version: "1.3.0"
+version: "1.3.5"
 port: 5005
 description: >-
   Nerd Watcher is a real-time swarm dashboard for solo Bitcoin miners running
@@ -79,6 +79,28 @@ releaseNotes: >-
   - Worker name copy button — click to copy the full stratumUser worker
     string directly from the miner card.
 
+widgets:
+  - id: "swarm"
+    type: "four-stats"
+    refresh: "5s"
+    endpoint: "app:5005/api/widget/swarm"
+    link: ""
+    example:
+      type: "four-stats"
+      link: ""
+      items:
+        - title: "Miners Online"
+          text: "8"
+          subtext: "of 9"
+        - title: "Swarm Hashrate"
+          text: "28.50"
+          subtext: "TH/s"
+        - title: "Swarm Shares"
+          text: "1,204"
+          subtext: "(12) 0.99%"
+        - title: "Block Height"
+          text: "888,142"
+          subtext: "current block"
 dependencies:
   - bitcoin
 path: ""
