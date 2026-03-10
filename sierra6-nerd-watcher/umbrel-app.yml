@@ -57,35 +57,30 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
-  v1.2.0
+  v1.3.0
 
-  - Mobile nav stats now update live — BTC price, network difficulty, and block
-    reward refresh on every poll on both desktop and mobile.
+  - Zero localStorage — all state is now server-authoritative. Sort preference,
+    electricity rate, block baselines, and last known block height persist in
+    config.json / state.json. No browser storage is used.
 
-  - Block Activity canvas is now collapsible on mobile with correct
-    resize behavior when switching between mobile and desktop widths.
+  - Sort preference syncs to server — selected sort order persists across
+    sessions and devices without relying on the browser.
 
-  - Block Shares counter color restored to emerald. Syncing state now
-    displays in amber while waiting for a clean block boundary.
+  - Electricity cost tracking — enter your kWh rate in Node Settings and each
+    miner card shows estimated daily power cost alongside efficiency (J/TH).
 
-  - Syncing dots animation fixed — only the dots animate, the label text
-    no longer shifts.
+  - Canvas block reset fix — block activity canvas now resets reliably on new
+    blocks. Reset is deferred until after the miner list refreshes to prevent
+    stale-data redraws.
 
-  - Cross-device baseline sync — share baselines are now server-authoritative.
-    Desktop and mobile always show the same block share count with no drift.
+  - Per-miner hardware telemetry expanded — power draw (W), current (A),
+    efficiency (J/TH), uptime, fan RPM, and RSSI now reported where available.
 
+  - Ping latency display — per-miner pool ping shown on each card with
+    color-coded thresholds (green ≤40ms, amber ≤60ms, orange >60ms).
 
-  v1.1.0
-
-  - Bitcoin Node declared as a formal dependency — RPC credentials are now
-    injected automatically by Umbrel. Zero manual configuration required on
-    a standard Umbrel install.
-
-  - Added Node Settings modal (gear icon in nav) for manual RPC configuration
-    on non-Umbrel or custom installs. Settings persist across restarts.
-
-  - Mobile responsive fixes — miner cards now render correctly on phones.
-    Collapsible Block Activity canvas on mobile. Floating Add Worker button.
+  - Worker name copy button — click to copy the full stratumUser worker
+    string directly from the miner card.
 
 dependencies:
   - bitcoin
