@@ -101,19 +101,6 @@ releaseNotes: >-
   - Cross-device baseline sync — share baselines are now server-authoritative.
     Desktop and mobile always show the same block share count with no drift.
 
-
-  v1.1.0
-
-  - Bitcoin Node declared as a formal dependency — RPC credentials are now
-    injected automatically by Umbrel. Zero manual configuration required on
-    a standard Umbrel install.
-
-  - Added Node Settings modal (gear icon in nav) for manual RPC configuration
-    on non-Umbrel or custom installs. Settings persist across restarts.
-
-  - Mobile responsive fixes — miner cards now render correctly on phones.
-    Collapsible Block Activity canvas on mobile. Floating Add Worker button.
-
 dependencies:
   - bitcoin
 path: ""
