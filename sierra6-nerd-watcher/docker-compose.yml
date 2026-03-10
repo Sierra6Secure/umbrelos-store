@@ -5,7 +5,7 @@ services:
     environment:
       APP_HOST: sierra6-nerd-watcher_web_1
       APP_PORT: 5005
-      PROXY_AUTH_WHITELIST: "/api/widget/*"
+      PROXY_AUTH_WHITELIST: "/api/*"
 
   web:
     image: ghcr.io/sierra6secure/nerdwatcher-ui:latest
