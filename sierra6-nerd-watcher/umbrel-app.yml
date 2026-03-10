@@ -56,8 +56,6 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
- 
-
   - Zero localStorage — all state is now server-authoritative. Sort preference,
     electricity rate, block baselines, and last known block height persist in
     config.json / state.json. No browser storage is used.
