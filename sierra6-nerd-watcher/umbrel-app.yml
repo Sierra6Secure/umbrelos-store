@@ -4,7 +4,7 @@ name: Nerd Watcher
 tagline: Real-time dashboard for your Bitcoin mining swarm.
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/icon.png
 category: utility
-version: "1.4.0"
+version: "1.3.5"
 port: 5005
 description: >-
   Nerd Watcher is a real-time swarm dashboard for solo Bitcoin miners running
@@ -56,36 +56,28 @@ gallery:
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/1.png
   - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-nerd-watcher/img/2.png
 releaseNotes: >-
-### Fixed
-- Race conditions causing miners to flash offline and block share counts
-  to reset incorrectly under concurrent request/poll load
+  - Zero localStorage — all state is now server-authoritative. Sort preference,
+    electricity rate, block baselines, and last known block height persist in
+    config.json / state.json. No browser storage is used.
 
-- Canvas shares not appearing until page refresh — animateLanding() was
-  targeting the wrong DOM cell when a new row was not needed
+  - Sort preference syncs to server — selected sort order persists across
+    sessions and devices without relying on the browser.
 
-- Miner added via UI would leave stale baseline/state on removal,
-  causing incorrect share counts if re-added in the same block
+  - Electricity cost tracking — enter your kWh rate in Node Settings and each
+    miner card shows estimated daily power cost alongside efficiency (J/TH).
 
+  - Canvas block reset fix — block activity canvas now resets reliably on new
+    blocks. Reset is deferred until after the miner list refreshes to prevent
+    stale-data redraws.
 
-### Added
-- Block age display ("Xm ago") next to block number in Block Activity panel
+  - Per-miner hardware telemetry expanded — power draw (W), current (A),
+    efficiency (J/TH), uptime, fan RPM, and RSSI now reported where available.
 
-- Mid-block share estimation for newly added miners — shows ~N shares in
-  amber based on lifetime share rate; falls back to Syncing if uptime < 60s
+  - Ping latency display — per-miner pool ping shown on each card with
+    color-coded thresholds (green ≤40ms, amber ≤60ms, orange >60ms).
 
-
-### Improved
-- Telemetry (Bitcoin RPC + price) moved to background thread; UI endpoint
-  now reads from cache instantly instead of blocking on network I/O
-
-- Swarm poller now polls all miners in parallel — one offline miner no
-  longer stalls the rest of the fleet
-
-- RPC config cached in memory; eliminates disk read every 3 seconds
-
-- Canvas update path simplified — always rebuilds from state before flash
-
-- Config endpoint refactored to single file read per request
+  - Worker name copy button — click to copy the full stratumUser worker
+    string directly from the miner card.
 
 widgets:
   - id: "swarm"
