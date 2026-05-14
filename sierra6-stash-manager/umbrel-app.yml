@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: sierra6-stash-manager
 name: Stash.Mgr
-tagline: Replace this tagline with your app's tagline
+tagline: Self-hosted personal budget manager
 icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-stash-manager/img/icon.png
 category: Finance
 version: "1.0.0"
