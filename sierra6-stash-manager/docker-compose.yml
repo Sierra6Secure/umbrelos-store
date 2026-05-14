@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   app:
-    image: ghcr.io/sierra6secure/stashmanager_ui:latest
+    image: ghcr.io/sierra6secure/stashmanager-ui:latest
     restart: on-failure
     stop_grace_period: 2s
     networks:
