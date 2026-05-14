@@ -2,28 +2,28 @@ manifestVersion: 1
 id: sierra6-stash-manager
 name: Stash.Mgr
 tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
+icon: https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-stash-manager/img/icon.png
+category: Finance
 version: "1.0.0"
-port: 4000
+port: 6005
 description: >-
-  Add your app's description here.
+  Stash.Mgr is a private, self-hosted personal budget manager. Track income
+  and expenses across categories including housing, utilities, groceries,
+  transportation, debt, subscriptions, insurance, dining, health, savings,
+  and more. Supports recurring templates, monthly navigation, budget vs.
+  actual tracking, and Excel export.
 
-
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+developer: Sierra6
+website: https://github.com/Sierra6Secure/umbrelos-store
+submitter: Sierra6
+submission:
+repo: https://github.com/Sierra6Secure/umbrelos-store
+support: https://github.com/Sierra6Secure/umbrelos-store/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-stash-manager/img/1.png
+  - https://raw.githubusercontent.com/Sierra6Secure/umbrelos-store/main/sierra6-stash-manager/img/2.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Pending...
 dependencies: []
 path: ""
 defaultUsername: ""
